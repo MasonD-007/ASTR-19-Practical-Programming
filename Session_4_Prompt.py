@@ -10,15 +10,16 @@ Write an initialization function that sets the values of the data members when a
 Write a member function of the class to print out and describe the data members representing the physical characteristics of the animal.
 """
 class favorateAnimal:
-    def __init__(self, arms, legs, eyes, tail, furry):
+    def __init__(self, arms: float, legs: float, eyes: int, tail: bool, furry: bool):
         self.arms = arms
         self.legs = legs
         self.eyes = eyes
         self.tail = tail
         self.furry = furry
     def printInfo(self):
-        print("My favorite animal has", self.arms, "arms,", self.legs, "legs,", self.eyes, "eyes,", self.tail, "tail,", "and is", self.furry, "furry.")
+        print('My favorate animal is a Panda.')
+        print(f' Arms: {self.arms},\n Legs: {self.legs},\n Eyes: {self.eyes},\n Tail: {self.tail},\n Furry: {self.furry}')
 
 if __name__ == "__main__":
-    panda = favorateAnimal(2, 2, 2, True, True)
+    panda = favorateAnimal(2.0, 2.0, 2, True, True)
     panda.printInfo()
